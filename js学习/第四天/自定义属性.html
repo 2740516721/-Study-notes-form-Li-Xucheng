@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: aqua;
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" adcb="hello" data-hello="你好！"></div>
+</body>
+<script>
+    let box1 = document.querySelector('.box1');
+    box1.setAttribute('data-ok','ok');
+    console.log(box1.getAttribute('adcb'));
+    console.log(box1.dataset.hello); 
+</script>
+</html>

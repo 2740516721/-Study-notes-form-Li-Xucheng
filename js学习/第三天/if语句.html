@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h2"></h2>
+    <script>
+        // let a = 'aa';
+        // console.log(isNaN(a));
+
+        // switch语句
+        /* var h2 = document.getElementById('h2');
+        // prompt 获取的值是字符串，给个 ‘+’ 号就是数值了
+       var a = prompt('请根据你的第一念头一个输入3以内的数字，我们会根据你输入的数字预测你今日的运势！');
+        switch (a) {
+            case 0:
+                h2.innerHTML = '圆圆满满！';
+                break;
+            case 1:
+            h2.innerText ='一生一世！';
+                break;
+            case 2:
+            h2.innerText ='太二了！';
+                break;  
+            case 3:
+            h2.innerText ='删除！';
+                break;  
+            default:
+                break;
+        }
+        console.log(typeof a);
+        console.log(a); */
+
+        //for循环
+       /*  //输出乘法口诀表
+        for (var i = 1;i<=9;i++ ) {
+          
+            for(var j = 1;j<=i;j++){
+                var a = j +'×'+ i +'='+ i*j;
+               document.write(a+"&nbsp; &nbsp; &nbsp;");
+              
+            }
+            document.write('<br>');
+       
+        } */
+
+        let a = [55,2,1,4,4,7];
+        for(var i = 0;i<a.length;i++){
+            for(var j=0;j<i;j++){
+                if( a[j] > a[j+1]){
+                    var b = a[j+1];
+                    a[j+1] = a[j];
+                    a[j] = b;
+                }
+            }
+            
+        }
+        console.log(a);
+    </script>
+</body>
+</html>

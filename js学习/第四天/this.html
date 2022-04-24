@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //全局坏境下 this 指向Window
+        // console.log(this);//输出Window
+
+        // 局部环境下  在函数中， 严格模式下，函数中的this为undefined。
+        // 在全局[作用域]下直接调用函数，this指向window。
+        function one() {
+           console.log(this);  //输出Window
+        };
+        one();
+
+            let value = 'hello';
+        function two(value) {
+
+           this.value = value; // 函数中的 value 与函数外的 value 两个变量已经区别开了。
+            console.log(value);//输出   你好
+        }
+        two('你好');
+
+        var obj ={
+            name:'小红',
+            age:18,
+            sex:'女',
+            hello:function(){
+                console.log(this);//返回 obj 对象。
+                return '你好'+'我叫'+this.name+'今年'+this.age;
+            }
+        }
+        obj.hello();
+    </script>
+</body>
+</html>

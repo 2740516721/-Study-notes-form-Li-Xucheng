@@ -1,0 +1,35 @@
+var、let、const三个关键字：
+var、let、const都是可以全局声明的；
+
+var关键字与let声明最大的区别为作用域，var关键字声明范围是函数作用域，
+let声明的范围为块作用域（例如if{}代码块、for循环{}代码块）；
+
+let声明与const声明唯一重要的区别为用它初始化变量时必须同时初始化变量（意思是必须赋值），且尝试修改const声明的变量会导致运行时错误；但是，
+const声明的限制只适用于它指向的变量的引用（例如，如果用const引用的是一个对象，那么修改这个对象内部的属性并不违法const
+的限制）。可以适当的把const关键字当成声明一个常量。
+
+声明风格及最佳实践：
+	1、不使用var
+	2、const优先，let次之
+
+数据类型：
+一、undefined
+二、boolean
+三、string
+四、number(数值)
+五、object
+六、symbol(符号)
+
+typeof操作符：判断变量类型
+
+undefined:undefined类型值就为indefined
+null类型：null值表示一个空对象，null是一个假值
+boolean类型
+number类型
+nan类型：isNaN()函数检测是否“不是数值”，特殊数值：nan，意思为不是数值
+
+数值转换：
+Number(),将非数值转换为数值，可用于任何数据类型
+parseInt(),主要将字符串转换为数值，转换为整数，有两个参数，第一个参数为转换的值，第二个参数为要转换数值的进制
+parseFloat(),将字符串转换为浮点数，只转换十进制u
+

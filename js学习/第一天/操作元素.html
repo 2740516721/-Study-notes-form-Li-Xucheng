@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        .box2{
+            background-color: aquamarine;
+        }
+        /* .box3{
+           
+        } */
+    </style>
+</head>
+<body>
+    <h1>这个是innerHTML</h1>
+    <p class="one"><span> hello</span></p>
+    <h1>这个是innerText</h1>
+    <p class="one"></p>
+    <h1>这个是textContent</h1>
+    <p class="one"></p>
+    <input type="text" id="input">
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box3"></div>
+    <script>
+       /*  1、操作元素内容 */ 
+       const ps = document.querySelectorAll('.one');
+    //    获取元素
+       console.log(ps[0].innerHTML);
+    //    ps[0].innerHTML="<button >按钮</button>";
+       ps[1].innerText="hello  world";
+       ps[2].textContent="hello/n world";
+
+       /* 2、操作元素属性 */
+       document.getElementById('input').value="hello world";
+
+       /* 3、操作元素样式 */
+       const divs =  document.getElementsByClassName('box1');
+      divs[0].style.backgroundColor="red";
+      divs[1].className="box1 box2";
+      document.querySelector('.box3').style.cssText=" width:100px;height:100px;margin:20px auto;background-color:green;"
+    </script>
+</body>
+</html>
