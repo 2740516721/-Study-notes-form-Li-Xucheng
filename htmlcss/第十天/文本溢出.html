@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: bisque;
+        }
+        .box{
+            /* 内容不会被修剪，若是超出，会出现在内容框之外 */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+        }
+        .box1{
+            /* 内容会被隐藏 */
+            overflow: hidden;
+        }
+        .box2{
+            /* 出现滚动条*(无论内容是否被修剪)，可以滚动看到隐藏的内容 */
+            overflow: scroll;
+        }
+        .box3{
+            /* 如果内容被修剪，则浏览器会显示滚动条，以便查看其他的内容； */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ab, hic provident, corporis excepturi tempora in quae, veniam nostrum neque distinctio quis cum quam perspiciatis dignissimos deserunt minus. Recusandae, molestias!
+        Distinctio corporis dolorem earum ad excepturi magnam a quibusdam illo, soluta neque maxime. Earum qui eaque, ipsam unde odit officia nulla dolore maxime asperiores ratione aliquid, similique ad sunt repellendus!</p>
+    </div>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque deleniti animi explicabo dolores obcaecati nesciunt rerum aperiam quas reiciendis molestias laborum assumenda voluptate, sint esse. Eaque nesciunt quia vitae.
+        Esse earum repudiandae laborum consequuntur itaque at commodi dolor vitae saepe illo eos rerum, architecto sapiente explicabo nemo, cumque quasi magni. Labore a earum ad sapiente iste quos porro possimus.</p>
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit itaque distinctio vitae ipsa, autem eius dignissimos adipisci repellat eaque quo ducimus temporibus fugit nihil totam explicabo cum doloremque dicta.
+        Quae harum, accusantium doloremque est cupiditate debitis officiis dolorum at, dolores vel facere rerum distinctio eius consequatur ipsam ullam blanditiis vitae id quod provident necessitatibus unde mollitia. Ipsa, vero obcaecati?
+    </div>
+    <div class="box3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, iste voluptates. Inventore nisi quod accusamus id praesentium perferendis ullam saepe suscipit hic iusto. Reiciendis expedita asperiores, optio veniam facilis facere!
+        Enim fugiat dolore excepturi, atque a animi, eius iure aspernatur magni alias vitae maxime deleniti quidem velit natus praesentium quod. Nam sit deserunt provident soluta voluptatibus at quod laudantium blanditiis.
+    </div>
+</body>
+</html>

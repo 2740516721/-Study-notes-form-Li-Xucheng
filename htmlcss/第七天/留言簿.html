@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 600px;
+          overflow: hidden;
+            margin: 0 auto;
+            background-color: rgb(47, 255, 186);
+            border: 1px solid black;
+        }
+        .left,.right{
+            border: 1px solid black;
+            width: 278px;
+            padding: 10px;
+            float: left;
+        }
+        .right{
+            border: 1px solid black;
+            /* width: 300px; */
+            padding: 10px;
+            float: right;
+        }
+       .btnLeft{
+            border: 1px solid black;
+            width: 278px;
+            padding: 10px;
+            float: left;
+        }
+        .btnRight{
+            border: 1px solid black;
+            width: 278px;
+            padding: 10px;
+            float: right;
+        }
+        .liuyan{
+            border: 1px solid black;
+            /* width: 100%; */
+            padding: 10px;
+        }
+       /* { */
+            /* box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展] [阴影颜色] [投影方式];
+ */
+            /* box-shadow: -10px 10px 5px 5px orange;
+        } */
+    </style>
+</head>
+<body>
+    <form action="" class="box">
+        <h3 style="text-align: center;">留言簿</h3>
+    <div class="left">
+        <label for="name">姓名：</label>
+        <input type="text" placeholder="请输入你的姓名" id="name">
+    </div>
+    <div class="right">
+        <label for="emial">E_mail：</label>
+        <input type="email" placeholder="请输入你的邮件" id="emial">
+    </div>
+    <div class="liuyan">
+            <h3  style="text-align: center;letter-spacing: 20px;">留言</h3>
+        <textarea name="" id="liuyan" cols="60" rows="10" style="margin-left: 60px;">
+        </textarea>
+    </div>
+<div class="btnLeft">
+    <input type="submit" value="提交">
+</div>
+<div class="btnRight">
+    <input type="reset" value="重写">
+</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: cornflowerblue;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+        .header .headerLeft{
+            float: left;
+            width: 100px;
+            height: 20px;
+            background-color: aqua;
+        }
+        .header .headerRight{
+            float: right;
+            width: 80px;
+            height: 20px;
+            background-color: aqua;
+        }
+        .header .headerSearch{
+            width: 680px;
+            height: 75px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 0;
+            border-radius: 10px 0 0 10px;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+        }
+        .headerSearch button{
+            width: 90px;
+            height: 75px;
+            border-radius: 0 10px 10px 0;
+            border: 0;
+            position: absolute;
+            right: -8px;
+            background-color: rgb(0, 89, 255);
+            cursor: pointer;
+          
+        }
+        .headerSearch .logo{
+                width: 72px;
+                height: 72px;
+                float: left;
+                
+        }
+        i{
+            color: whitesmoke;
+            font-size: xx-large;
+        }
+        .logo img{
+            width: 60%;
+            padding: 14px;
+        }
+        .headerSearch input{
+            width: 489px;
+             height: 42px;
+             border: none;
+             /* 获取焦点时，去除黑框 */
+             outline: none;
+             padding: 23px 0 0 10px;
+                margin-left: 10px;
+             color: rgb(180, 177, 177);
+        }
+        .banner{
+            width: 700px;
+            height: 50px;
+            margin: 10px auto;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .hotSearch{
+            width: 40px;
+            height: 200px;
+            /* 相对于窗口定位 */
+            position: fixed;
+            background-color: blue;
+            right: 250px;
+            top: 110px;
+        }
+        .content{
+            width: 700px;
+            background-color: bisque;
+            margin: 10px auto;
+        }
+        .content .contentLeft{
+            width: 400px;
+            height: 600px;
+            float: left;
+            background-color: brown;
+        }
+        .contentLeft .leftTop{
+            width: 100%;
+            height: 40px;
+            background-color: aqua;
+        }
+        .content .contentRight{
+            width: 290px;
+            height: 600px;
+            float: right;
+            left: 10px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerLeft"></div>
+        <div class="headerRight"> </div>
+        <div class="headerSearch">
+            <div class="logo"><img src="./baidu.png" alt=""></div>
+            <input type="text" placeholder="请输入搜索的内容">
+            <button> 
+                <i class="el-icon-search"  name="word"></i>
+            </button>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <div class="hotSearch"></div>
+    <div class="content">
+        <div class="contentLeft">
+            <div class="leftTop"></div>
+        </div>
+        <div class="contentRight"></div>
+    </div>
+</body>
+</html>

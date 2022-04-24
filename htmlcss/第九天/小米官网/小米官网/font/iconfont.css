@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3292246 */
+  src: url('iconfont.woff2?t=1648742760385') format('woff2'),
+       url('iconfont.woff?t=1648742760385') format('woff'),
+       url('iconfont.ttf?t=1648742760385') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e6af";
+}
+
+.icon-weibo:before {
+  content: "\e6c4";
+}
+
+.icon-liwuhuodong:before {
+  content: "\e600";
+}
+
+.icon-15:before {
+  content: "\e639";
+}
+
+.icon-i-left:before {
+  content: "\e627";
+}
+
+.icon-rightyou:before {
+  content: "\e64f";
+}
+
+.icon-search:before {
+  content: "\e614";
+}
+
+.icon-play:before {
+  content: "\e650";
+}
+
+.icon-tools:before {
+  content: "\e61d";
+}
+
+.icon-Phone:before {
+  content: "\e630";
+}
+
+.icon-user:before {
+  content: "\e6b8";
+}
+
+.icon-wechat-fill:before {
+  content: "\e883";
+}
+
+.icon-rengongfuwu:before {
+  content: "\e63b";
+}
+
+.icon-24gl-bubbleDots3:before {
+  content: "\e93e";
+}
+
+.icon-sevenday:before {
+  content: "\e654";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e6c8";
+}
+
+.icon-location:before {
+  content: "\e6c5";
+}
+

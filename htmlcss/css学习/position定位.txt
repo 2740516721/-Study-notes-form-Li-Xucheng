@@ -1,0 +1,8 @@
+position最常用的四种定位详解
+
+①static默认值，position属性的默认值，当不设position属性时也会默认“position=static”；默认值的作用是当用到left,top,right,
+bottom等属性时，无任何效果，也就是不作用。
+②relative相对定位，设left,top,right,bottom等属性时有效，相对当前父元素盒子进行偏移
+③absolute绝对定位，设绝对定位时，“ margin: 0 auto;”将没有任何效果；相对于最近的relative、absolute属性值的盒子进行偏
+移
+④fixed,相对于浏览器窗口进行定位，元素的位置不会随着屏幕滚动而改变，而是固定在当前浏览器窗口的已设置的位置。

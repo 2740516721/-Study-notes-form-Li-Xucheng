@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="username">Name:</label>
+            <input type="text" id="username" placeholder="请输入你的名字" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="请输入你的密码" name="password">
+        </div>
+        <div>
+            <label for="email">Emall:</label>
+            <input type="email" id="email" placeholder="请输入你的邮箱" name="email">
+        </div>
+         <!-- min属性为限定的最小值，max属性为限定最大值，step为每次增加或者减少的值 -->
+        <p>Age（请选择）：<input type="number" placeholder="年龄" min="1" max="99" step="1"></p>
+        <!-- select标签为列表框 selected为默认选中 -->
+        <label for="work">请问你的职业是：</label>
+        <select name="work" id="work" >
+            <option value="" selected="selected">请选择你的职业</option>
+            <option value="" >学生</option>
+            <option value="">工人</option>
+            <option value="" >教师</option>
+            <option value="">司机</option>
+        </select>
+
+        <p>请从以下选项选出你的爱好：
+            <!-- checkbox为复选框，意思是可选可不选 -->
+            <input type="checkbox" name="interest" value="playGame">玩游戏
+            <input type="checkbox" name="interest" value="football">足球
+            <input type="checkbox" name="interest" value="sing">唱歌
+        </p>
+
+        <p>你最喜欢粤嵌平台的功能是什么？
+            <select name="" id="" aria-placeholder="请选择">
+                <option value="" >1</option>
+                <option value="">2</option>
+                <option value="" >3</option>
+                <option value="">4</option>
+            </select>
+        </p>
+        <p>你希望看到什么改进？（可以全选）
+            <input type="checkbox" name="interest" value="playGame">玩游戏
+            <input type="checkbox" name="interest" value="football">足球
+            <input type="checkbox" name="interest" value="sing">唱歌
+        </p>
+        <p>有什么意见或建议？</p>
+        <textarea name="" id="one" cols="60" rows="10" placeholder="有什么意见或建议"></textarea><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

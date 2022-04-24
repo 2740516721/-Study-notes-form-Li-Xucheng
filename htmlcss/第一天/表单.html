@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action属性是将表单中的数据指向哪里（路径）；method属性是
+    指定发送数据的方式，最常用的有GET\POST两种 -->
+    <form action="" method="">
+        <h2>文本域</h2>
+        <!-- 文本域  size属性是设置文本域的高长度（宽）  
+             maxlength属性是设置最大输入字符-->
+        <input type="text" placeholder="请输入你想评论的内容..." 
+        size="100" maxlength="50">
+    </form><hr>
+
+
+    <form action="www.baidu.com" method="post">
+        <h2>文件域</h2>
+        <p><input type="file" name="files">
+           <input type="submit" value="提交" name="upload"></p>
+    </form><hr>
+
+
+    <form action="">
+        <h2>多行文本语法</h2>
+        <!-- cols属性设置列数，rows属性设置行数 -->
+       <textarea name="" id="one" cols="60" rows="10" placeholder="请填写你的评论"></textarea>
+    </form><hr>
+
+    <form action="">
+        <h2>请填写相关信息</h2>
+        <!-- required属性为表单的初级验证功能，规定文本框内容不能为空，否则不能提交表单 -->
+        <p>用户名：<input type="text" placeholder="请填写你的账户" name="userName" required></p>
+        <!--  pattern属性功能为用户必须填写符合正则表达式的内容，否则不能提交表单 -->
+        <label for="password">密码：</label><input type="password" name="password"  pattern="">
+        <p>电子邮箱：<input type="email" name="email"></p>
+        <p>请输入你喜欢的网址：<input type="url" name="loveurl"></p>
+        <!-- min属性为限定的最小值，max属性为限定最大值，step为每次增加或者减少的值 -->
+        <p>请输入你的年龄：<input type="number" name="year" min="1" max="99" step="2"></p>
+        <p>请选择你的性别：
+            <!-- radio为单选框/checked为默认选中项 -->
+            <input type="radio" value="男" name="male" checked>男
+            <input type="radio" value="女" name="women">女
+        </p>
+        <p>请从以下选项选出你的爱好：
+            <!-- checkbox为复选框，意思是可选可不选 -->
+            <input type="checkbox" name="interest" value="playGame">玩游戏
+            <input type="checkbox" name="interest" value="football">足球
+            <input type="checkbox" name="interest" value="sing">唱歌
+        </p>
+        <!-- select标签为列表框 selected为默认选中 -->
+        <select name="address" id="">
+            <option value="" >北京</option>
+            <option value="">上海</option>
+            <option value="" selected="selected">广西</option>
+            <option value="">广东</option>
+        </select>
+        <!-- hidden属性值作为为，该input标签为隐藏域，不可见 -->
+        <input type="hidden" value="666">
+        <!-- readonly的作用为只读 -->
+        <input type="text" value="我是张三" readonly>
+        <!-- disabled禁用 -->
+        <input type="button" value="禁用disabled" disabled>
+        <input type="reset" name="resetButton" value="resetann">
+        <input type="submit" name="submit" value="submit按钮">
+        <input type="button" value="普通按钮">
+    </form>
+</body>
+</html>

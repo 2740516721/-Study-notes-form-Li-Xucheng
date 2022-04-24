@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 导入网页图标 -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- 此样式表中包含此网页的所有样式 -->
+  <link rel="stylesheet" href="./stylesheets/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 定义网页标题 -->
+  <title>小米商城 - Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站</title>
+</head>
+
+<body>
+
+  <!-- 页面根元素，应当在此元素下写入页面代码 -->
+  <div id="app">
+    <div class="header">
+      <div class="headerbox">
+        <ul class="headerLeft">
+          <li>小米商城 </li>
+          <li><span>|</span>MIUI</li>
+          <li><span>|</span>ioT</li>
+          <li><span>|</span>云服务</li>
+          <li><span>|</span>天星数科</li>
+          <li><span>|</span>有品</li>
+          <li><span>|</span>小爱开放平台</li>
+          <li><span>|</span>企业团购</li>
+          <li><span>|</span>资质证照</li>
+          <li><span>|</span>协议规则</li>
+          <li class="relationship1"><span>|</span>下载app</li>
+          <li><span>|</span>Select Location</li>
+          <div class="code1">
+            <img src="./images/download.png" alt="">
+            小米商城 APP
+          </div>
+        </ul>
+        <ul class="headerRight">
+          <li>登录</li>
+          <li><span>|</span>注册</li>
+          <li><span>|</span>消息通知</li>
+          <li id="shoppingCart"><i class="iconfont icon-cart" style="margin-left: 5px;">
+            </i><span> 购物车（0）</span>
+          </li>
+          <div class="shoppingCart">
+            <img src="images/动态.gif" alt="" id="img">
+            <p>购物车中还没有商品，赶紧选购吧！</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="maxNavbox">
+      <div class="navbox">
+        <div class="nav">
+          <!-- LOGO -->
+          <div class="logo">
+            <img src="./images/logo-mi2.png" alt="图片丢失">
+          </div>
+          <!-- 次导航 -->
+          <div class="navContent">
+            <ul id="tabs">
+              <li>Xiaomi手机</li>
+              <li>Redmi手机</li>
+              <li>电视</li>
+              <li>笔记本</li>
+              <li>平板</li>
+              <li>家电</li>
+              <li>路由器</li>
+              <li>服务</li>
+              <li>社区</li>
+            </ul>
+          </div>
+          <!-- 搜索框 -->
+          <div class="search">
+            <input type="text" placeholder="小米10S">
+            <button>
+              <i class="iconfont icon-search" name="word"></i>
+            </button>
+          </div>
+        </div>
+        <hr>
+        <!-- 下滑商品start -->
+        <div class="bottomShopping" id="bottomShoppings">
+          <!-- 小米手机 -->
+          <div class="bottomShoppings bottomShoppingsActive">
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi11_青春活力版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi12.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi12_pro.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi12_x.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi_civi.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Xiaomi手机/xiaomi_mix4.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 红米 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_10a.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_k40s.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_k50.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_k50_电竞版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_k50pro.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/Redmi 红米/redmi_note11pro系列.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 电视 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/navbar/电视/redmi智能电视x55_2022.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/电视/Redmi智能电视X65_2022.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/电视/小米电视 大师  77_OLED.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/电视/小米电视 大师 65英寸OLED.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/电视/小米电视6 65_OLED.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/电视/小米透明电视.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 笔记本 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/navbar/笔记本/Redmi_G_2021_Intel版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/笔记本/RedmiBook_Pro14_2022.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/笔记本/Redmibook_Pro14_锐龙版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/笔记本/RedmiBook_Pro15_2022.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/笔记本/RedmiBook_Pro15_增强版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/笔记本/小米笔记本_Pro14_锐龙版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 平板 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/navbar/平板/小米平板5.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/平板/小米平板5_Pro.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/平板/小米平板5Pro_5G.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 家电 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/navbar/家电/小米净水器S1_800G.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/家电/巨省电 3匹_变频_新一级能效（鎏金款）.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/家电/巨省电 _ 米家空调_新一级_1.5匹_睡眠版.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/家电/米家扫拖机器人1T.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/家电/米家风冷对开门冰箱_483L.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+          <!-- 路由器 -->
+          <div class="bottomShoppings">
+            <a href="#">
+              <img src="./images/navbar/路由器/Redmi_电竞路由器_AX5400.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/路由器/Redmi路由器 AX6.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/路由器/Redmi路由器AC2100.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/路由器/小米AIoT路由器AX3600.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/路由器/小米路由器AX6000.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+            <a href="#">
+              <img src="./images/navbar/路由器/小米路由器AX9000.webp" alt="">
+              <h3>Redmi 10A</h3>
+              <p>649元起</p>
+            </a>
+          </div>
+        </div>
+        <!-- 下滑商品end -->
+      </div>
+    </div>
+    <!-- 轮播start -->
+    <div class="bannerBox">
+
+      <div class="banner">
+        <!-- 左侧导航 -->
+        <div class="bannerNav">
+          <ul id="ul">
+            <li>
+              <span>手机</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>电视</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>笔记本 平板</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>家电 </span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+
+              <span>出行 穿戴</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>智能 路由器</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>电源 配件</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>健康 儿童</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>耳机 音箱</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+            <li>
+              <span>生活 箱包</span>
+              <i class="el-icon-arrow-right"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- 轮播图 -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/swiper/swiper-1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/swiper/swiper-2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/swiper/swiper-3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/swiper/swiper-4.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/swiper/swiper-5.webp" alt="">
+            </div>
+          </div>
+
+          <!-- 导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- 分页器 -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 隐藏的弹出商品 -->
+        <div class="dialog" id="dialog">
+          <div class="dialogBox dialogBoxActive">
+            <ul class="dialogCol">
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-01.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-02.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-03.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-04.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-05.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-06.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="dialogCol">
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-07.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-08.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-09.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-10.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-11.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-12.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="dialogCol">
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-13.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-14.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-15.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-16.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-17.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-18.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="dialogCol">
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-19.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-20.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-21.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-22.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-23.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/navbar/aside/手机/phone-24.webp" alt="" style="width:40px;height: 40px;">
+                  <span style="padding-left: 12px;">Redmi K50Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dialogBox">
+            <h1>我</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>是</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>利</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>煦</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>承</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>有钱</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>暴富</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>有钱暴富</h1>
+          </div>
+          <div class="dialogBox">
+            <h1>暴富有钱</h1>
+          </div>
+        </div>
+      </div>
+      <!-- 轮播图下方的广告条 -->
+      <div class="information">
+        <div class="channel">
+          <ul class="channelBox">
+            <li>
+              <a href="#">
+                <img src="./images/others/other-1.png" alt="">
+                <p> 保障服务</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/others/other-2.png" alt="">
+                <p> 企业团购</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/others/other-3.png" alt="">
+                <p> F码通道</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/others/other-4.png" alt="">
+                <p>米粉卡</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/others/other-5.png" alt="">
+                <p> 以旧换新</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/others/other-6.png" alt="">
+                <p> 话费充值</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="shopLink">
+          <a href="#">
+            <img src="./images/others/other-7.jpeg" alt="">
+          </a>
+        </div>
+        <div class="shopLink">
+          <a href="#">
+            <img src="./images/others/other-8.jpeg" alt="">
+          </a>
+        </div>
+        <div class="shopLink">
+          <a href="#">
+            <img src="./images/others/other-9.jpeg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播end -->
+
+    <!-- 主体start -->
+    <div class="main">
+      <!-- 广告条 -->
+      <div class="mainBanner">
+        <a href="#">
+          <img src="./images/head-1.webp" alt="" style="width: 1226px;">
+        </a>
+      </div>
+      <!-- 手机 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>手机</h2>
+          <div class="more more1">
+            <a href="#">查看更多<i class="iconfont icon-arrow-right-circle" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft">
+            <a href="#">
+              <img src="./images/main/手机/phone-1.webp" alt="">
+            </a>
+          </div>
+          <div class="shoppingRight">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-6.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/手机/phone-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 智能穿戴 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>智能穿戴</h2>
+          <div class="more more2" id="more2">
+            <a href="#" class="active">热门</a>
+            <a href="#">穿戴</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft">
+            <a href="#">
+              <img src="./images/main/智能穿戴/capacity-1.webp" alt="">
+            </a>
+          </div>
+          <div class="shoppingRightShow" id="wares">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-6.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能穿戴/capacity-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/智能穿戴/capacity-9.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi Buds 3 青春版</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 笔记本|平板 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>笔记本 <span>|</span> 平板 </h2>
+          <div class="more more2">
+            <a href="#" class="active">热门</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft">
+            <a href="#">
+              <img src="./images/main/笔记本、平板/nodepad-1.webp" alt="">
+            </a>
+          </div>
+          <div class="shoppingRight">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-6.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/笔记本、平板/nodepad-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/笔记本、平板/nodepad-9.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi 显示器23.8 英寸</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 家电 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>家电</h2>
+          <div class="more more2" id="more3">
+            <a href="#" class="active">热门</a>
+            <a href="#">电视影音</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/家电/appliance-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/家电/appliance-5.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="shoppingRightShow" id="wares3">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-6.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/家电/appliance-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/家电/appliance-10.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi Buds 3 青春版</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 生活电器 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>生活电器</h2>
+          <div class="more more2" id="more4">
+            <a href="#" class="active">扫地机</a>
+            <a href="#">空净</a>
+            <a href="#">清洁</a>
+            <a href="#">风扇</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/生活电器/life-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/生活电器/life-6.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="shoppingRightShow" id="wares4">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/生活电器/life-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>身</h2>
+              </li>
+              <li>
+                <h2>体</h2>
+              </li>
+              <li>
+                <h2>健</h2>
+              </li>
+              <li>
+                <h2>康</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>万</h2>
+              </li>
+              <li>
+                <h2>事</h2>
+              </li>
+              <li>
+                <h2>如</h2>
+              </li>
+              <li>
+                <h2>意</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 广告条 -->
+      <div class="mainBanner">
+        <a href="#">
+          <img src="./images/head-2.webp" alt="" style="width: 1226px;">
+        </a>
+      </div>
+      <!-- 厨房电器 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>厨房电器</h2>
+          <div class="more more2" id="more5">
+            <a href="#" class="active">净水器</a>
+            <a href="#">烟灶</a>
+            <a href="#">电饭煲</a>
+            <a href="#">微蒸烤</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/厨房电器/k-appliance-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/厨房电器/k-appliance-6.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="shoppingRightShow" id="wares5">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/厨房电器/k-appliance-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/厨房电器/k-appliance-10.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi Buds 3 青春版</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>身</h2>
+              </li>
+              <li>
+                <h2>体</h2>
+              </li>
+              <li>
+                <h2>健</h2>
+              </li>
+              <li>
+                <h2>康</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>万</h2>
+              </li>
+              <li>
+                <h2>事</h2>
+              </li>
+              <li>
+                <h2>如</h2>
+              </li>
+              <li>
+                <h2>意</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 智能家居 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>智能家居</h2>
+          <div class="more more2" id="more6">
+            <a href="#" class="active">小爱音箱</a>
+            <a href="#">门锁</a>
+            <a href="#">路由器</a>
+            <a href="#">智能设备</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/智能家居/smart-home-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/智能家居/smart-home-6.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="shoppingRightShow" id="wares6">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/智能家居/smart-home-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/智能家居/smart-home-9.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi Buds 3 青春版</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>身</h2>
+              </li>
+              <li>
+                <h2>体</h2>
+              </li>
+              <li>
+                <h2>健</h2>
+              </li>
+              <li>
+                <h2>康</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>万</h2>
+              </li>
+              <li>
+                <h2>事</h2>
+              </li>
+              <li>
+                <h2>如</h2>
+              </li>
+              <li>
+                <h2>意</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 运动出行 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>运动出行</h2>
+          <div class="more more2" id="more7">
+            <a href="#" class="active">平衡车/滑板车</a>
+            <a href="#">运动健身</a>
+            <a href="#">箱包配饰</a>
+            <a href="#">出行工具</a></a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/运动出行/run-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/运动出行/run-6.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="shoppingRightShow" id="wares7">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-2.jpeg" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-4.png" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/运动出行/run-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>身</h2>
+              </li>
+              <li>
+                <h2>体</h2>
+              </li>
+              <li>
+                <h2>健</h2>
+              </li>
+              <li>
+                <h2>康</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>万</h2>
+              </li>
+              <li>
+                <h2>事</h2>
+              </li>
+              <li>
+                <h2>如</h2>
+              </li>
+              <li>
+                <h2>意</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 广告条 -->
+      <div class="mainBanner">
+        <a href="#">
+          <img src="./images/head-3.webp" alt="" style="width: 1226px;">
+        </a>
+      </div>
+      <!-- 日用百货 -->
+      <div class="shopppingList">
+        <div class="title">
+          <h2>日用百货</h2>
+          <div class="more more2" id="more8">
+            <a href="#" class="active">个户健康</a>
+            <a href="#">电源/线材</a>
+            <a href="#">儿童用品</a>
+            <a href="#">家居床品</a>
+          </div>
+        </div>
+        <div class="shoppings">
+          <div class="shoppingLeft1">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/日用百货/g-merchandise-1.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/日用百货/g-merchandise-6.webp" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="shoppingRightShow" id="wares8">
+            <ul class="waresList shoppingsActive">
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-2.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-3.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-4.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-5.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-7.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-8.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="shoppingInformation">
+                    <img src="./images/main/日用百货/g-merchandise-9.webp" alt="">
+                  </div>
+                  <h3 style="color: #333;font-size: 14px;margin: 20px 10px 2px;font-weight: 400;text-align: center;">
+                    Redmi K50 Pro</h3>
+                  <p style="font-size:12px;color: #B0B0B0;margin: 0px 10px 10px;height: 18px;text-align: center;">
+                    2K直屏狠旗舰</p>
+                  <p style="color: #FF6700;font-size: 14px;margin: 0 10px 14px; text-align: center;">
+                    2999元起</p>
+                </a>
+              </li>
+              <div class="lastLi">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="lastImg">
+                        <img src="./images/main/日用百货/g-merchandise-10.webp" alt="">
+                      </div>
+                      <h3 style="">Redmi Buds 3 青春版</h3>
+
+
+                      <p style="">699 元</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="lastIcon">
+                      <i class="el-icon-right"></i>
+                    </div>
+                    <div class="lastMore">
+                      浏览更多
+                      <p style="color: #B0B0B0;font-size: 12px;">热门</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>我</h2>
+              </li>
+              <li>
+                <h2>要</h2>
+              </li>
+              <li>
+                <h2>暴</h2>
+              </li>
+              <li>
+                <h2>富</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>身</h2>
+              </li>
+              <li>
+                <h2>体</h2>
+              </li>
+              <li>
+                <h2>健</h2>
+              </li>
+              <li>
+                <h2>康</h2>
+              </li>
+            </ul>
+            <ul class="waresList">
+              <li>
+                <h2>万</h2>
+              </li>
+              <li>
+                <h2>事</h2>
+              </li>
+              <li>
+                <h2>如</h2>
+              </li>
+              <li>
+                <h2>意</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 视频 -->
+      <div class="shopppingList" style="margin-bottom: 0;padding-bottom: 24px;">
+        <div class="title">
+          <h2>视频</h2>
+          <div class="more more1">
+            <a href="#">查看全部<i class="iconfont icon-arrow-right-circle" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+        <div class="shoppingVedio">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/main/视频/tv-1.webp" alt="">
+                <h3>2021年春季新品发布会第一场</h3>
+                <div class="vedioIcon">
+                  <i class="el-icon-caret-right"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/视频/tv-2.webp" alt="">
+                <h3>Redmi 10X 系列发布会</h3>
+                <div class="vedioIcon">
+                  <i class="el-icon-caret-right"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/视频/tv-3.webp" alt="">
+                <h3>小米10 青春版发布会</h3>
+                <div class="vedioIcon">
+                  <i class="el-icon-caret-right"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/视频/tv-4.webp" alt="">
+                <h3>小米10 8K手机拍大片</h3>
+                <div class="vedioIcon">
+                  <i class="el-icon-caret-right"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 固定侧边导航条start -->
+      <div class="sidebar">
+        <ul>
+          <li class="relationship2">
+            <a href="#"><i class="iconfont icon-Phone"></i>
+              <p> 手机APP</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="iconfont icon-user"></i>
+              <p> 个人中心</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="iconfont icon-tools"></i>
+              <p>售后服务</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="iconfont icon-rengongfuwu"></i>
+              <p>人工客服</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="el-icon-shopping-cart-2"></i>
+              <p>购物车</p>
+            </a>
+          </li>
+          <li id="returnTop">
+            <a href="#"><i class="el-icon-upload2"></i>
+              <p>回顶部</p>
+            </a>
+          </li>
+          <div class="code2">
+            <img src="./images/download.png" alt="">扫码领新人 <br> 百元红包
+          </div>
+        </ul>
+      </div>
+      <!-- 固定侧边导航条end -->
+    </div>
+    <!-- 主体end -->
+    <!-- 页脚start -->
+    <footer>
+      <div class="help">
+        <div class="helpTop">
+          <ul>
+            <li>
+
+              <a href="#">
+                <i class="iconfont icon-tools"></i>
+                预约维修服务
+              </a>
+            </li>
+            <li>
+              <span>|</span>
+              <a href="#">
+                <!-- <span>|</span> -->
+                <i class="iconfont icon-sevenday"></i>
+                七天无理由退货
+              </a>
+            </li>
+            <li>
+              <span>|</span>
+              <a href="#">
+                <!-- <span>|</span> -->
+                <i class="iconfont icon-15"></i>
+                15天免费换货
+              </a>
+            </li>
+            <li>
+              <span>|</span>
+              <a href="#">
+                <!-- <span>|</span> -->
+                <i class="iconfont icon-liwuhuodong"></i>
+                满69包邮
+              </a>
+            </li>
+            <li>
+              <span>|</span>
+              <a href="#">
+                <!-- <span>|</span> -->
+                <i class="iconfont icon-location"></i>
+                520余家售后网点
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="helpMain">
+          <div class="helpMainLeft">
+            <table cellspacing="18">
+              <tr style="font-size: 14px;">
+                <th align="left">帮助中心</th>
+                <th align="left">服务支持</th>
+                <th align="left">线下门店</th>
+                <th align="left">关于小米</th>
+                <th align="left">关注我们</th>
+                <th align="left"> 特色服务</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td>
+                  <a href="#">账户管理</a>
+                </td>
+                <td>
+                  <a href="#">售后政策</a>
+                </td>
+                <td>
+                  <a href="#">
+                    小米之家
+                  </a>
+                </td>
+                <td>
+                  <a href="#">了解小米</a>
+                </td>
+                <td>
+                  <a href="#">新浪微博</a>
+                </td>
+                <td>
+                  <a href="#">F 码通道</a>
+                </td>
+
+
+
+              </tr>
+
+              <tr style="font-size: 12px;">
+                <td>
+                  <a href="#">购物指南</a>
+                </td>
+                <td>
+                  <a href="#">自助服务</a>
+                </td>
+                <td>
+                  <a href="#">
+                    服务网点</a>
+                </td>
+
+                <td>
+                  <a href="#">加入小米</a>
+                </td>
+                <td>
+                  <a href="#">官方微信</a>
+                </td>
+                <td>
+                  <a href="#">礼物码</a>
+                </td>
+
+              </tr>
+
+              <tr style="font-size: 12px;">
+                <td>
+                  <a href="#">订单操作</a>
+                </td>
+                <td>
+                  <a href="#">相关下载</a>
+                </td>
+                <td>
+                  <a href="#">授权体验店/专区</a>
+                </td>
+                <td>
+                  <a href="#">投资者关系</a>
+                </td>
+                <td>
+                  <a href="#">联系我们</a>
+                </td>
+
+
+                <td>
+                  <a href="#">防伪查询</a>
+                </td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="#">企业社会责任</a>
+                </td>
+                <td>
+                  <a href="#">公益基金会</a>
+                </td>
+                <td></td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href="#">廉洁举报</a>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="helpMainRight">
+            <img src="./images/weixin.png" alt="">
+            <h1> 扫码加好友</h1>
+          </div>
+        </div>
+      </div>
+      <div class="LeavingMessage">
+        <div class="box">
+          永远相信美好的事情即将发生
+        </div>
+      </div>
+    </footer>
+    <!-- 页脚end -->
+    <!-- script -->
+    <script src="./javascripts/index.js" type="module"></script>
+</body>
+
+</html>

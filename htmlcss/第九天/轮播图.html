@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .father {
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        .child {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .child ul {
+            position: absolute;
+            bottom: 10px;
+            left: 43%;
+        }
+
+        .circular1 {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(173, 173, 173);
+            float: left;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .circular2 {
+            background-color: #616161;
+           
+        }
+
+        .bgli {
+            border: 1px solid black;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .child i {
+            width: 41px;
+            height: 69px;
+            background-color: #616161;
+            opacity: 0.4;
+            font-size: 26px;
+            line-height: 69px;
+            text-align: center;
+            color: #f5f5f5;
+            position: absolute;
+        }
+
+        .el-icon-arrow-left {
+            top: 40%;
+            left: 0;
+        }
+
+        .el-icon-arrow-right {
+            top: 40%;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="child">
+            <img src="./1.webp" alt="" id="childImg">
+            <i class="el-icon-arrow-left" id="btnl"></i>
+            <i class="el-icon-arrow-right" id="btnr"></i>
+            <ul>
+                <li class="circular1"></li>
+                <li class="circular1"></li>
+                <li class="circular1"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const lis = document.getElementsByTagName('li');
+        const img = document.getElementById('childImg');
+        const btnl = document.getElementById('btnl');
+        const btnr = document.getElementById('btnr');
+        const srcs = ['./1.webp', './3.webp', './2.jpg'];
+        var a = 0;
+        // 隔两秒轮播图片
+        let b = setInterval(lunbo, 2000);
+
+        function lunbo() {
+            if (a == srcs.length - 1) {
+                a = 0;
+            } else {
+                a += 1;
+            }
+            img.src = srcs[a];
+            // 小圆点
+            for (var i = 0; i < lis.length; i++) {
+               
+            }
+            lis[a-1].classList.remove('circular2')
+            lis[a].classList.add('circular2');
+        }
+
+
+
+
+
+        // 鼠标移入图片，清除定时器
+        img.addEventListener('mouseenter', function () {
+            clearInterval(b);
+            console.log('清除成功');
+        });
+        // 鼠标移出图片，启动定时器
+        img.addEventListener('mouseleave', function () {
+            b = setInterval(lunbo, 2000);
+            console.log('启动成功');
+        })
+
+
+
+        // 左边按钮
+        btnl.addEventListener('mouseenter', function () {
+            // 鼠标移入，清除定时器（清除图片轮播）
+            clearInterval(b);
+            console.log('清除成功');
+            this.addEventListener('click', function () {
+                if (a == 0) {
+                    a = srcs.length - 1;
+                } else {
+                    a -= 1;
+                }
+                img.src = srcs[a];
+                console.log('上一张图片');
+            })
+        });
+
+        btnl.addEventListener('mouseleave', function () {
+            b = setInterval(lunbo, 2000);
+            console.log('启动成功');
+        });
+
+
+        // 右边按钮
+        btnr.addEventListener('mouseenter', function () {
+            clearInterval(b);
+            console.log('清除成功');
+            this.addEventListener('click', function () {
+                if (a == srcs.length - 1) {
+                    a = 0;
+                } else {
+                    a += 1;
+                }
+                img.src = srcs[a];
+                console.log('下一张图片');
+            })
+        });
+
+        btnr.addEventListener('mouseleave', function () {
+            b = setInterval(lunbo, 2000);
+            console.log('启动成功');
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

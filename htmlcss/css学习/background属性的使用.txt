@@ -1,0 +1,32 @@
+background常用的几个属性
+①background-color
+	background-color属性是用来设置背景颜色的，也可以直接使用background属性直接设置背景颜色
+②background-image
+	background-image属性通过url()来引入背景图片，当然，也可以通过background属性与属性值url()来引入背景图片
+③background-repeat
+	当设置了background-image属性后，背景图片默认在垂直和水平方向重复，即属性值之一的repeat
+	属性值2，no-repeat，只表现一张图片，即引入使用的那一张，不会重复
+	属性值3，repeat-x，背景图像在x轴方向，即水平方向上重复
+	属性值4，repeat-y，背景图像在y轴方向，即垂直方向上重复
+④background-size
+	该属性用于设置图片大小，默认值为auto
+	属性值一，contain，把背景图片扩展至最大尺寸，使背景图片宽度和高度完全适应背景区域
+	属性值二，cover，把背景图片扩展至足够大，使背景图片完全覆盖背景区域，会出现背景图片某些部分也许无法呈现在
+定位区域中。
+	其他属性，百分比（宽，高），数值法（宽，高）
+⑤background-position
+	设置背景图片位置，相对于元素进行定位
+	属性值有数值法与百分比法，如默认左上角位置（0，0），还有其他：
+top left
+top center
+top right
+center left
+center center（==center）
+center right
+bottom left
+bottom center
+bottom right
+
+
+实际上，设置背景图片刚刚适应背景框，可设background-repeat属性的属性值为no-repeat和background-size属性的属性值为
+contain就可以把背景图片自适应大小了，如果还不行，或者歪了，那再加个background-position:center;

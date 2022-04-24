@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            margin: 0 auto;
+
+        }
+        /* 选择属于其父元素的第一个子元素的所有 H3 元素 */
+        h3:nth-child(1){
+            text-align: center;
+            /* 草书 */
+            font-family: cursive;
+        }
+        /* 选择所有父元素为div的p元素 */
+        div>p{
+            /* serif 衬线字体 */
+            font-family: serif;
+            /* 两端对齐 */
+            text-align: justify;
+            font-size: x-small;
+        }
+        /* 选择属于其父元素第1个span元素的每个span元素 */
+       span:nth-of-type(1){
+            font-family: sans-serif;
+            /* 定义斜体字体 */
+            font-style: italic;
+            float: left;
+            color: bisque;
+        }
+        span:nth-of-type(2){
+            font-family: sans-serif;
+            /* 定义斜体字体 */
+            font-style: italic;
+            float: right;
+            color: rgb(196, 197, 255);
+        }
+        p:nth-of-type(1){
+            /* 首行缩进 */
+            text-indent: 2;
+            font-size: xx-large;
+            /* 词距 */
+            word-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>愤怒恐惧啊妇女雕刻技法</h3>
+        <span>李某</span>
+        <span>2022/3/08</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe quisquam neque ipsa officiis nam sit sequi eligendi quam necessitatibus fugit voluptas velit omnis nobis aut vero maiores ea ratione.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, ut? Provident recusandae tempora quos ratione. Voluptatem, mollitia, dolor, distinctio excepturi voluptate assumenda sequi provident quasi magni sed minima veniam amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe quisquam neque ipsa officiis nam sit sequi eligendi quam necessitatibus fugit voluptas velit omnis nobis aut vero maiores ea ratione.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, ut? Provident recusandae tempora quos ratione. Voluptatem, mollitia, dolor, distinctio excepturi voluptate assumenda sequi provident quasi magni sed minima veniam amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe quisquam neque ipsa officiis nam sit sequi eligendi quam necessitatibus fugit voluptas velit omnis nobis aut vero maiores ea ratione.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, ut? Provident recusandae tempora quos ratione. Voluptatem, mollitia, dolor, distinctio excepturi voluptate assumenda sequi provident quasi magni sed minima veniam amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe quisquam neque ipsa officiis nam sit sequi eligendi quam necessitatibus fugit voluptas velit omnis nobis aut vero maiores ea ratione.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, ut? Provident recusandae tempora quos ratione. Voluptatem, mollitia, dolor, distinctio excepturi voluptate assumenda sequi provident quasi magni sed minima veniam amet!</p>
+    </div>
+</body>
+</html>

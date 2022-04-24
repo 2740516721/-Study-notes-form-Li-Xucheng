@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.box{
+            width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 20px  40px 10px;
+        }
+        p.box::before{
+            content:" hello world";
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 10px 0 0;
+        }
+        p.box::after{
+            content:" end";
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 0 0 10px;
+        }
+        .container{
+            border: 1px solid black;
+           
+            /* 清除浮动方法二 */
+            /* overflow: hidden; */
+        }
+        /* 清除浮动方法一 */
+        /* 使用 after 伪元素在元素末尾添加内容在 IE6 和 IE7 下是不兼容的。
+
+                这个时候就要使用到 zoom 缩放来触发 IE 下的 haslayout ,使元素根据自身内容计算宽高。
+
+                要注意：在 IE6，IE7 下，父级元素有宽高是不用清浮动的。 */
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 兼容性处理 */
+        .clear{
+            *zoom:1;
+        }
+        .child{
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+            float: left;
+        }
+        #box1{
+            border: 1px solid black;
+        }
+        #box2{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p class="box">other content</p>
+    <div class="container clear">
+        <div class="child">没有清除浮动</div>
+    </div>
+
+
+    <button id="one">display（显示/隐藏）</button>
+    <button id="two">visibility（显示/隐藏）</button>
+ 
+    <div id="box2">我是visibility设置的显示隐藏</div>
+    <div id="box1">我是display设置的显示隐藏</div>
+    <script>
+        var box1=document.getElementById('box1');
+        var box2=document.getElementById('box2');
+        var btns=document.querySelectorAll('button');
+        btns[0].onclick=function(){
+            var a = 0;
+            if ( a == 0 ) {
+                box1.style.display = 'none';
+                a= 1;
+            }
+            
+        }
+        btns[1].onclick=function(){
+            var a = 0;
+            if ( a == 0 ) {
+                box2.style.visibility = 'hidden';
+                a= 1;
+            }
+            
+        }
+    </script>
+</body>
+</html>
