@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+        }
+        #dv{
+            position: absolute;
+            width: 100px;
+            opacity: 0.5;
+            height: 100px;
+            background-color: red;
+        }
+
+        #dv1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 400px;
+            opacity: 0.5;
+            background-color: green;
+        }
+        #dv2{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 800px;
+            opacity: 0.5;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">移动400</button>
+    <button id="btn2">移动800</button>
+    <button id=btn3>回到原位</button>
+    <div id="dv"></div>
+    <div id="dv1"></div>
+    <div id="dv2"></div>
+    <script>
+        let btn1 = document.getElementById('btn1');
+        let btn2 = document.getElementById('btn2');
+        let btn3 = document.getElementById('btn3');
+        let dv = document.getElementById('dv');
+
+        btn1.onclick = function(){animation(dv,400);};
+        btn2.onclick = function(){animation(dv,800);};
+        btn3.onclick = function(){animation(dv,0);};
+
+        function animation(element,target){
+
+        console.log(element.offsetLeft);//输出当前盒子的左偏移量
+
+        clearInterval(element.timeid);//清除定时器
+            //执行定时器
+        element.timeid = setInterval(function(){
+            var current = element.offsetLeft;//获取当前盒子偏移量
+            var step = 8;//步长为8
+            /* 
+             *如果当前盒子左偏移量仍小于输入的偏移量，则加 8 偏移量，如果小于，则减 8 偏移量。
+            */
+            step= current<target?step:-step;
+            current+=step;
+
+            /* Math.abs()函数返回一个绝对值 */
+            if(Math.abs(target-current)>Math.abs(step)){
+                //每次移动的偏移量等于当前获取到的偏移量 加或减 8
+                /* 
+                    *如果目标偏移量减去当前偏移量大于步长，则继续加8偏移量向目标偏移量移动。
+                    *如果小于步长 8 ，则直接等于目标偏移量。
+                */
+                element.style.left = current +"px";
+            }else{
+                clearInterval(element.timeid)
+                element.style.left = target+"px";
+            }
+        }, 10);
+
+    }
+
+    let a = 3;
+    let b = 2;
+    a = b<1 ?a:-a;
+    console.log(a);
+    </script>
+</body>
+</html>
