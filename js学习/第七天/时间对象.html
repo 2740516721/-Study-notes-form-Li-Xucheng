@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建时间对象
+        /* 没有任何赋值时，获取当前时间（年月日时分秒） */
+        let now = new Date();
+        console.log(now);
+
+        /* 传入的参数为毫秒值，返回的结果为1970年1月1日00：00：00 开始加上这个毫秒值*/
+       let now1 = new Date(123456789);
+       console.log(now1);
+
+       /* 参数为日期字符串,返回参数的值（返回参数所写的时间） */
+       let now2 = new Date("Fri Jan 02 2021")
+       console.log(now2);
+
+       /* 年月日时分秒，输出参数所输入的时间 */
+       let now3 = new Date(2022,3,29,10,36,59);
+       console.log(now3);
+
+       let now7 = new Date(2022,3,29);
+       console.log('now7'+now7);
+        /* 注意：字符串参数为时间节点，数字参数会默认为毫秒值 */
+
+       
+       
+       
+        /* 以下三种方法，输出当前时间的毫秒数，距离1970 */
+       let now4 = Date.now();
+       console.log("now4=>"+now4);
+       
+        /* 1970-2020年9月8日的毫秒数 */
+       let now5 = Date.parse(2020,8,8);
+       console.log("now5=>"+now5);
+       
+        /* 1970-2020年9月8日的毫秒数 */
+        let now6 = Date.UTC(2020,9,8);
+       console.log("now6=>"+now6);
+       
+        
+       
+       
+       /* 获取年份 */
+        let year = now.getFullYear();
+        console.log(year);
+
+        /* 获取月份，月份从 0 开始,所以要正常显示，需要加上 1 */
+        let month = now.getMonth();
+        console.log(month);
+
+        /* 获取星期 */
+        let week = now.getDay();
+        console.log(week);
+
+        /* 获取日 */
+        let day = now.getDate();
+        console.log(day);
+
+        /* 获取小时 */
+        let hour = now.getHours();
+        console.log(hour);
+
+        /* 获取分钟 */
+        let minute = now.getMinutes();
+        console.log(minute);
+
+        /* 获取秒数 */
+        let second = now.getSeconds();
+        console.log(second);
+
+
+
+        /* 
+            toDateString() 返回的是星期 月 日 年
+
+            toTimeString() 返回的是时 分 秒 时区
+
+            toLocaleDateString() 返回的是年/月/日
+
+            toLocaleTimeString() 返回本地时 分 秒
+
+            toUTCString() 返回对应的UTC时间
+            也就是国际标准时间 比北京晚8个小时
+
+            toLocaleString() 返回本地时间
+
+        */
+
+        let time1 = new Date();
+        let date = time1.toDateString();
+        console.log(date);
+        let hour1 = time1.toTimeString();
+        console.log(hour1);
+        let year1 = time1.toLocaleDateString();
+        console.log(year1);
+        let localTime = time1.toLocaleTimeString();
+        console.log(localTime);
+
+        /* 时间戳，从1970年距现在的毫秒值 */
+        let time2 = new Date();
+        let timechazhi = time2.getTime();
+        console.log(timechazhi);
+
+    </script>
+</body>
+</html>
