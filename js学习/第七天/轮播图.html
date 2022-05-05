@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./1.png" alt="" id="img">
+    </div>
+    <script>
+        let img = document.getElementById('img');
+        let imgArr = ['./1.png','./2.png','./3.png','./4.png',];
+        let index = 0;
+
+        setInterval(function(){
+            img.src = imgArr[index];
+            index++;
+            if(index>=imgArr.length){
+                index = 0;
+            }
+        },1000);
+      
+    </script>
+</body>
+</html>
