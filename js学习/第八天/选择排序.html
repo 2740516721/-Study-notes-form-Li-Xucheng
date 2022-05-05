@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            原理首先从原始数组中找到最小的元素，并把该元素放在数组的最前面，
+            然后再从剩下的元素中寻找最小的元素，放在之前最小元素的后面，知道排序完毕。
+         */
+        var arr = [23,4543,657,68,766,9,6,456,4345,666];
+        console.log(arr);
+        function xuanze(array){
+            var len = arr.length;
+            var minIndex;
+            for(var i = 0;i<len;i++){
+                 minIndex = i;
+                for(var j = i+1;j<len;j++){
+                    if(array[j]<array[minIndex]){
+                        minIndex = j;
+                    }  
+                }
+                var temp = array[i];
+                    array[i] = array[minIndex];
+                    array[minIndex] = temp;
+            }
+            console.log(array);
+        }
+        xuanze(arr);
+    </script>
+</body>
+</html>

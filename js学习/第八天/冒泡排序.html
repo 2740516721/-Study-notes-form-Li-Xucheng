@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+            1、比较相邻的两个元素，如果前一个比后一个大，则交换位置。
+            2、比较完第一轮的时候，最后一个元素是最大的元素。
+            3、这时候最后一个元素是最大的，所以最后一个元素就不需要参与比较大小。
+         */
+        var arr = [44,5,43,5,3,46,3,4443,3];
+        console.log(arr);
+        function maopao(array){;
+            let len = array.length;
+            for(var i = 0;i<len;i++){
+                for(var j = 0;j<len-i;j++){
+                    if(arr[j]>arr[j+1]){
+                       var temp = arr[j];
+                       arr[j] = arr[j+1];
+                       arr[j+1] = temp;
+                    }
+                }
+            }
+            console.log(array);
+        }
+        maopao(arr);
+    </script>
+</body>
+</html>
