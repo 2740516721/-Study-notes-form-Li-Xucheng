@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var json = '{"name":"小明","age":18,"hoppy":"篮球、足球，唱跳，rap"}';
+        // 将json对象转换为JavaScript对象
+        var str = JSON.parse(json);
+        console.log(str);
+        console.log(json);
+        let a = "小红";
+        // 将JavaScript对象转换为json对象
+        let json1 = JSON.stringify(a);
+        console.log(a);
+        console.log(json1);
+    </script>
+</body>
+</html>

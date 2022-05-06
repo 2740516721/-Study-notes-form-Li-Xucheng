@@ -31,9 +31,10 @@
         /*  插入数组元素，三个参数，第一个参数为添加数组元素的位置，
         第二个参数为 0 ，第三个参数以后为要添加数组的元素的值，可添加多个
         用括号隔开 */
-        // arr.splice(0,0,44,55,66,99,88,77);
-        // console.log(arr.splice(0,0,88,99));  输出一个空数组 ？？
-        // console.log(arr);
+        var arr=[2,3,34,43,5,46,5,4,7,];
+        arr.splice(0,0,44,55,66,99,88,77);
+        console.log(arr.splice(0,0,88,99)); // 输出一个空数组 ？？
+        console.log(arr);
 
 
         /* 删除数组元素，两个参数，第一个参数是从哪里开始删除，
@@ -106,11 +107,36 @@
 
 
         /* 累加器 */
-        let arr = [1,3,4,5,6,6];
+       /*  let arr = [1,3,4,5,6,6];
         let arr1 = arr.reduce(function(a,b,c){
             return a+b;
         })
-        console.log(arr1);
+        console.log(arr1); */
+
+
+        // 
+        let str = "我爱中华人民共和国";
+        console.log(str.slice(2,2));
+
+        let str1 = "afjdksdvoofdf";
+        str1.splice(-4,2,'*','*')
+        console.log( str1);
+
+        let a = "abcdfgaaa123411156";
+        console.log(a.length);
+
+        console.log(a[0]);
+        console.log(a[3]);
+        console.log(a[5]);
+        console.log(a[9]);
+
+        console.log(a.indexOf('i'));
+        console.log(a.indexOf('c'));
+        console.log(a.indexOf('b'));
+        // console.log(a.indexOf(9));
+
+        console.log(a.slice(1,5));
+
     </script>
 
 </body>
