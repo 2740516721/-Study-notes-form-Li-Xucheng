@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+      
+        #box2{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: rgb(242, 144, 16);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <a href="www.baidu.com">
+            <button id="btn1">我是box1的子元素按钮</button>
+        </a>
+      
+        <div id="box2">
+       
+        </div>
+    </div>
+    <script>
+        let box1 = document.getElementById("box1");
+        let btn1 = document.getElementById("btn1");
+        let box2 = document.getElementById("box2");
+
+
+        // 冒泡
+        /* btn1.addEventListener("click",function(){
+            alert("你点击了按钮");
+        })
+        
+        box1.addEventListener("click",function(){
+            alert("你点击了box1盒子");
+        })
+
+        box2.addEventListener("click",function(){
+            alert("你点击了box2盒子");
+        }) */
+
+        // 阻止事件冒泡
+        // 添加 stopPropagation() 方法 加在点击就会出现冒泡行为的事件上
+        btn1.addEventListener("click",function(e){
+            alert("你点击了按钮");
+            e.stopPropagation();
+            e.preventDefault();
+        });
+        
+        box1.addEventListener("click",function(){
+            alert("你点击了box1盒子");
+           
+        });
+
+        box2.addEventListener("click",function(){
+            alert("你点击了box2盒子");
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        button{
+            margin-top: 10px;
+        }
+        #tab{
+            border: 1px;
+            width: 100%;
+        }
+        /* #tab th,#tab td{
+            align:center;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <span>姓名：</span>
+            <input type="text">
+        </p>
+        <p>
+            <span>性别：</span>
+            <input type="text">
+        </p>
+        <p>
+            <span>班级：</span>
+            <input type="text">
+        </p>
+        <p>
+            <span>年龄：</span>
+            <input type="text">
+        </p>
+        <p>
+            <span>专业：</span>
+            <input type="text">
+        </p>
+        <!-- cellspacing 单元格间距离  cellpadding 单元格内边距-->
+        <table id="tab" rules="all" cellpadding="" cellspacing="">
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>班级</th>
+                <th>年龄</th>
+                <th>专业</th>
+            </tr>
+            <tr>
+                <td align="center">利煦承</td>
+                <td align="center">男</td>
+                <td align="center">计应20-2</td>
+                <td align="center">18</td>
+                <td align="center">计算机应用技术</td>
+            </tr>
+        </table>
+        <button onclick="btn1()"> 添加表格</button>
+        <button onclick="btn2()">删除表格</button>
+        <button onclick="btn3()">删除全部表格</button>
+    </div>
+    <script>
+        // 获取输入的值
+        var vals = document.querySelectorAll('input');
+        // 获取表格
+        var tab = document.getElementById('tab');
+  
+
+        // 添加表格
+        function btn1(){
+            if(vals[0].value==''||vals[1].value==''||vals[2].value==''||vals[3].value==''||vals[4].value==''){
+                alert("请填写完毕在提交");
+                return 
+            }
+            // 创建 tr 行 节点
+            let tr = document.createElement("tr");
+            // td.setAttribute("align","center");
+        //   增加节点
+            tab.appendChild(tr);
+            // 创建姓名节点
+            let name = document.createElement("td");
+            name.innerHTML = vals[0].value;
+            name.setAttribute("align","center");
+            tr.appendChild(name);
+            // 创建性别节点
+            let sex = document.createElement("td");
+            sex.innerHTML = vals[1].value;
+            sex.setAttribute("align","center");
+            tr.appendChild(sex);
+            // 创建学号节点
+            let classn = document.createElement("td");
+            classn.innerHTML = vals[2].value;
+            classn.setAttribute("align","center");
+            tr.appendChild(classn);
+            // 创建年龄节点
+            let age = document.createElement("td");
+            age.innerHTML = vals[3].value;
+            age.setAttribute("align","center");
+            tr.appendChild(age);
+            // 创建专业节点
+            let major = document.createElement("td");
+            major.innerHTML = vals[4].value;
+            major.setAttribute("align","center");
+            tr.appendChild(major);
+
+            // 添加完成后，清空 input 框的值
+            vals.forEach(function(value,index){
+                value.value = '';
+            })
+
+        }
+
+        // 删除一行表格
+        function btn2(){
+            let trs = tab.querySelectorAll("tr");
+            // 判断表格是否清空
+            if(trs.length < 2){
+                alert("表格已清空！");
+                return
+            }
+            let lgh = trs.length;
+           
+           
+            trs[lgh-1].parentNode.removeChild(trs[lgh-1]);
+            // console.log(trs.length);
+        }
+
+        // 删除整个表格，除了标题
+        function btn3(){
+            let trs = tab.querySelectorAll("tr");
+            if(trs.length < 2){
+                alert("表格已清空！");
+                return
+            }
+            let lgh = trs.length-1;
+            for(var i = lgh;i>0;i--){
+                trs[i].parentNode.removeChild(trs[i]);
+            }
+        }
+    </script>
+</body>
+</html>
