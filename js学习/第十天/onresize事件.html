@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            padding: 100px;
+            border: 10px solid black;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        /* function one(){
+            console.log(this);//this指向window
+            // console.log(this.resizeFlag);
+        }
+        one(); */
+
+
+        var box = document.getElementById('box');
+
+      /*   box.addEventListener('click',function(){
+            console.log(this);//输出当前节点元素（当前标签元素，连带着标签一起输出）
+
+            
+        }) */
+
+      /*   box.addEventListener('onresize',function(){
+           this.style.backgroundColor = "red";
+
+           // 没有任何反应
+        }) */
+
+        box.addEventListener('resize',function(){
+            
+            this.style.backgroundColor = "red";
+            console.log('事件有响应');
+
+        })
+    </script>
+</body>
+</html>
