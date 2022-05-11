@@ -44,7 +44,7 @@
             width: 100%;
             height: 80px;
             position: absolute;
-            background-color: azure;
+            background-color: rgb(203, 208, 208);
             top: 0;
         }
     </style>
@@ -76,15 +76,94 @@
         </div>
     </div>
     <script>
-        let context = document.querySelector(".context");
-        /* 
-            隐藏的内容 = 实际内容（scrollHeight）-可视区域内容(clientHeight),
+         /* 
+            隐藏的内容 = 实际内容高度（scrollHeight）-可视区域内容高度(clientHeight),
             可以通过设置 scrollTop 的值来显示被隐藏的部分，最大值为 隐藏内容 的值。
         */
 
-        console.log(context.scrollHeight);
-        console.log(context.clientHeight);
-        context.scrollTop = context.scrollHeight-context.clientHeight;
+       /*  console.log(context.scrollHeight);//内容区域实际高度
+        console.log(box.clientHeight);//内容区域实际高度
+        context.scrollTop = context.scrollHeight-box.clientHeight;//隐藏的高度
+         */
+        
+        let context = document.querySelector(".context");
+        let block = document.querySelector(".block");
+        let scrolltt = document.querySelector(".scroll");
+        let box = document.querySelector(".box");
+       
+         var barHeight;//滑块的高度
+         var scrollttHeight = scrolltt.clientHeight;//滚动区域高度
+         var boxHeight = box.clientHeight;//盒子的可视高度
+         var contextHeight = context.scrollHeight;//内容区域高度，包括隐藏的部分
+         var boxTop; // box盒子距整个可视窗口顶部的距离
+         var offsetY;//获取鼠标按下时在滑轮上的距离（y轴上）
+
+         //  判断内容盒子的高度是否大于可视窗口，大于显示滑轮，小于则不显示。
+         if(contextHeight>boxHeight){
+             barHeight = boxHeight/contextHeight*scrollttHeight;
+             block.style.height = barHeight+'px';
+         }else{
+             block.style.height = "0px";
+         }
+
+        block.addEventListener("mousedown",drag);
+        
+        function drag(e){
+             boxTop = box.offsetTop; // box盒子距整个可视窗口顶部的距离
+             offsetY = e.offsetY;//获取鼠标按下时在滑轮上的距离（y轴上）
+            document.addEventListener("mousemove",dragMove);
+        }
+        function dragMove(e){
+                var hideHeight = scrollttHeight - barHeight;//滑块可移动最大高度
+                var scrollttHideHeight = contextHeight - boxHeight;//内容区域可移动最大高度
+                var ratio = scrollttHideHeight/hideHeight;//内容区域可移动最大高度与滑块可移动最大高度的比例
+                var blockTop = e.clientY - offsetY - boxTop;//滚动条滚动的距离
+                // 限制滑块的区域
+                if (blockTop<=0) {
+
+                    block.style.top = '0px';
+                    context.scrollTop = '0px';
+                    console.log(context.scrollTop);
+
+                }else if(blockTop>=hideHeight){
+
+                    block.style.top = hideHeight+'px';
+                    context.scrollTop = scrollttHideHeight+'px';
+                    console.log(context.scrollTop);
+
+                }else{
+
+                    block.style.top = blockTop + 'px';
+                    context.scrollTop = ratio*blockTop+'px';
+                    console.log(context.scrollTop);
+
+                }
+            }
+        // 鼠标抬起时，清除事件
+       block.addEventListener("mouseup",dragUp);
+        
+
+       function dragUp(){
+            document.removeEventListener("mousemove",dragMove);
+            document.removeEventListener("mouseup",dragUp);
+       }
+        /* 
+              if(e.type == "mousedown"){
+                // offsetX = e.offsetX;
+           
+                offsetY = e.offsetY;     // 鼠标按下时在滑块上的距离
+                block.addEventListener("mousemove",drag);
+                block.addEventListener("mouseup",drag);
+            }else if(e.type == "mousemove"){
+
+                // blockTop = e.client - boxTop - offsetY;
+                console.log(offsetY);
+
+            }else if(e.type == "mouseup"){
+                document.removeEventListener("mousemove",drag);
+                document.removeEventListener("mouseup",drag);
+            }
+        */
     </script>
 </body>
 </html>
