@@ -22,18 +22,33 @@
         let box = document.getElementById('box');
         let boxWidth = box.clientWidth;
         let boxHeight = box.clientHeight;
-        let boxTop = box.clientTop;
-        let boxLeft = box.clientLeft;
+       
         let windownWidth = document.documentElement.clientWidth;
         let windownHeight = document.documentElement.clientHeight;
+  
 
-        console.log(boxWidth);
-        console.log(boxHeight);
-        console.log(boxTop);
-        console.log(boxLeft);
-        console.log(windownWidth);
-        console.log(windownHeight);
+        box.addEventListener("click",function(e){
+            // let e = this.e||window.e;
+        //     let boxClientX = e.clientX;
+        // let boxClientY = e.clientY;
+        // let boxTop = box.offsetTop;
+        // let boxLeft = box.offsetLeft;
+        // console.log("boxTop"+boxTop);
+        // console.log("boxLeft"+boxLeft);
+        // console.log("boxClientX"+boxClientX);
+        // console.log("boxClientY"+boxClientY);
+        // console.log(e.offsetX);
+        // console.log(e.offsetY);
+        console.log(e);
+        console.log(this);
+        });
 
+        // console.log(boxWidth);
+        // console.log(boxHeight);
+    
+        // console.log(windownWidth);
+        // console.log(windownHeight);
+      
     </script>
 </body>
 </html>

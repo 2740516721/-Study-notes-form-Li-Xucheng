@@ -61,3 +61,11 @@ offsetLeft 和 offsetTop 只读，而 style.left 和 style.top 可读写（只�
 
 如果当前元素的父级元素，没有CSS定位（position为absolute、relative、fixed），那么offsetParent的返回结果为body。
 如果当前元素的父级元素，有CSS定位（position为absolute、relative、fixed），那么offsetParent的返回结果为最近的那个父级元素（返回的是一整个父元素标签对象）。
+
+
+
+
+
+#### offsetX、offsetY
+
+鼠标按下的位置相对于有定位的父元素（当前元素）的X、Y轴坐标的距离。

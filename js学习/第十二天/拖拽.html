@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../封装函数库/拖拽/drag.js"></script>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: aqua;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        拖着我走吧
+    </div>
+    <script>
+        let box = document.getElementById("box");
+        
+        drag(box);
+
+   /*  function tuozhuai(element){
+        var offsetX,offsetY;
+        // 鼠标按下事件
+        element.addEventListener("mousedown",mouseHandler);
+ 
+        function mouseHandler(e){
+        if(e.type==="mousedown"){
+            // 获取鼠标第一次按下时鼠标距离当前对象的坐标。
+            offsetX=e.offsetX;
+            offsetY=e.offsetY;
+            document.addEventListener("mousemove",mouseHandler)
+            document.addEventListener("mouseup",mouseHandler)
+        }else if(e.type==="mousemove"){
+             
+                移动时鼠标距离浏览器窗口可视区域的坐标X、Y
+                减去鼠标按下时距离当前对象的X，Y坐标。 
+            
+            element.style.left=e.clientX-offsetX+"px"
+            element.style.top=e.clientY-offsetY+"px"
+        }else if(e.type==="mouseup"){
+            // 鼠标抬起时，清除鼠标移动事件和鼠标抬起事件
+            document.removeEventListener("mousemove",mouseHandler)
+            document.removeEventListener("mouseup",mouseHandler)
+        }
+}
+    } */
+    </script>
+</body>
+</html>

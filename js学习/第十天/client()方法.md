@@ -10,3 +10,10 @@
 对象可以是标签节点，也可以是document.documentElement.clientWidth（获取可视窗口的宽度）。
 
 注意：client* 只是一个属性，不是一个方法，后面不跟括号，否则会报错。
+
+
+
+#### clientX、clientY
+
+鼠标单击或者按下位置在距离当窗口可视区域中x、y坐标的距离。
+
