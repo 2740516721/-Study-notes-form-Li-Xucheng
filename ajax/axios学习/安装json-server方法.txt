@@ -1,0 +1,19 @@
+第一：Install JSON Server（安装JSON Server服务器）
+
+npm install -g json-server
+
+第二：Create a db.json file with some data（建立一个db.json文件，db.json文件是用来存储数据的）
+例如：
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+第三：Start JSON Server（启动JSON Server服务器）
+
+json-server --watch db.json

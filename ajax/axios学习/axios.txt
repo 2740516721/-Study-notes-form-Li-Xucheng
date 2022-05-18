@@ -1,0 +1,95 @@
+1、什么是axios?
+上古浏览器页面在向服务器请求数据时，因为返回的是整个页面的数据，页面都会强制刷新一下，这对于用户来讲并不是很友好。
+并且我们只是需要修改页面的部分数据，但是从服务器端发送的却是整个页面的数据，十分消耗网络资源。而我们只是需要修改
+页面的部分数据，也希望不刷新页面，因此异步网络请求就应运而生。
+
+Ajax(Asynchronous JavaScript and XML)：异步网络请求。Ajax能够让页面无刷新的请求数据。
+
+实现ajax的方式有多种，如jQuery封装的ajax，原生的XMLHttpRequest，以及axios。但各种方式都有利弊
+
+原生的XMLHttpRequest的配置和调用方式都很繁琐，实现异步请求十分麻烦
+jQuery的ajax相对于原生的ajax是非常好用的，但是没有必要因为要用ajax异步网络请求而引用jQuery框架
+Axios，可以理解为ajax i/o system，这不是一种新技术，本质上还是对原生XMLHttpRequest的封装，可用于浏览器和
+nodejs的HTTP客户端，只不过它是基于Promise的，符合最新的ES规范。具备以下特点：
+
+在浏览器中创建XMLHttpRequest请求
+在node.js中发送http请求
+支持Promise API
+拦截请求和响应
+转换请求和响应数据
+取消要求
+自动转换JSON数据
+客户端支持防止CSRF/XSRF(跨域请求伪造)
+
+2、axios的运行过程
+①执行请求
+②判断状态并返回产生状态的原因
+③发送成功或失败
+
+3、axios请求
+①//执行GET请求，方法一
+import axios from 'axios'
+axios.default.baseURL = 'http://localhost:3000/api/products'
+axios.get('/user?ID=12345')  //返回的是一个Promise
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err));
+
+//可配置参数的方式，方法二
+axios.get('/user',{
+    params:{
+        ID:12345
+    }
+}).then(res=>console.log(res))
+    .catch(err=>console.log(err));
+
+
+
+②//发送post请求
+axios.post('/user',{
+    firstName: 'simon',
+    lastName:'li'
+}).then(res=>console.log(res))
+    .catch(err=>console.log(err));
+
+
+
+③//发送多个请求(并发请求)，类似于promise.all，若一个请求出错，那就会停止请求
+const get1 = axios.get('/user/12345');
+const get2 = axios.get('/user/12345/permission');
+axios.all([get1,get2])
+    .then(axios.spread((res1,res2)=>{
+    	console.log(res1,res2);
+	}))
+    .catch(err=>console.log(err))
+
+
+④通过axios(config)设置一些属性发送请求
+//发送post请求
+axios({
+    method: 'post',  //请求方式，默认是get请求
+    url:'/user/12345', //地址
+    data:{ //参数
+        firstName: 'simon',
+        lastName: 'li'
+    }
+});
+
+
+⑤通过axios.create({config})创建实例的方法
+const instance = axios.create({
+    baseURL: 'http://localhost:3000/api/products',
+    timeout: 1000,
+    headers: {'X-Custom-Header':'foobar'}
+});
+//instance的使用
+instance.get('/user',{
+    params:{ID:12345}
+}).then(res=>console.log(res))
+.catch(err=>console.log(err))
+
+4、axios各种请求的功能：
+①get请求：一般多用于获取数据　；
+②post请求: 主要提交表单数据和上传文件；
+③put请求：对数据全部进行更新（修改）
+④patch请求：只对更改过的数据进行更新
+⑤delete请求：删除请求

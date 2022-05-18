@@ -1,0 +1,13 @@
+什么是promise？
+	promise是抽象的异步处理对象。他是一个解决异步处理程序的一个方法、构造函数，Promise 构造函数接受一个函数作为参数。
+
+promise的三个状态？
+	①Pending：进行中
+	②Fulfilled：已成功
+	③Rejected：以失败	
+
+promise的相关函数：
+	①resolve 返回状态为“已成功”的数据
+	②reject 返回状态为“以失败”的数据
+	③then，调用已成功对应的resolve函数，输出其中的值，接受一个参数是resolve返回的数据。
+	④catch，捕获异常，对应以失败状态的reject函数，输出其中的值

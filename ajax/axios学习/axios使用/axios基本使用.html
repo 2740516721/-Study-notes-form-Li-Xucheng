@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios基本使用</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div>
+    <h1>基本使用</h1><hr>
+    <button style="background-color: rgb(77, 77, 247);">发送get请求</button>
+    <button style="background-color: rgb(247, 179, 77);">发送post请求</button>
+    <button style="background-color: rgb(94, 241, 107);">发送put请求</button>
+    <button style="background-color: rgb(218, 76, 76);">发送delete请求</button>
+</div>
+    <script>
+        const btns=document.querySelectorAll('button');
+        //第一个按钮单击事件
+        btns[0].onclick = function(){
+            //发送AJAX请求
+            axios({
+                //发送请求类型
+                method:'GET',
+                //请求路径
+                //url大写就会报错
+                url:'http://localhost:3000/profile',
+            }).then(response=>{
+                var i=response.data.name;
+                console.log(i);
+                console.log(response);
+            }).catch(reject=>{
+                console.log(reject);
+            });
+        }
+         //添加一篇新文章
+         btns[1].onclick = function(){
+            //发送AJAX请求
+            axios({
+                //发送请求类型
+                //post请求: 主要提交表单数据和上传文件
+                method:'POST',
+                //请求路径
+                //url大写就会报错
+                url:'http://localhost:3000/posts',
+                //设置请求体(data)
+                data:{
+                    title:'今天是二月十号，我学习了POST请求',
+                    author:'利煦承'
+                }
+            }).then(response=>{
+                console.log(response);
+            }).catch(reject=>{
+                console.log(reject);
+            });
+        }
+
+           //更新数据
+           btns[2].onclick = function(){
+            //发送AJAX请求
+            axios({
+                //发送请求类型
+                //PUT请求: 对数据进行更新（修改）
+                method:'PUT',
+                //请求路径
+                //url大写就会报错
+                //URL结尾id选择为2，就是指定要修改的对象
+                url:'http://localhost:3000/posts/2',
+                //设置请求体
+                data:{
+                    title:'二月八号学习axios第一课，二月十号通过PUT请求修改了数据',
+                    author:'利煦承'
+                }
+            }).then(response=>{
+                console.log(response);
+            }).catch(reject=>{
+                console.log(reject);
+            });
+        }
+
+         //删除数据
+         btns[3].onclick = function(){
+            //发送AJAX请求
+            axios({
+                //发送请求类型
+                //DELETE请求: 删除数据，delete请求不需要设置请求体，！！注意：他会删除所有指定id的值
+                method:'DELETE',
+                //请求路径
+                //url大写就会报错
+                //URL结尾id选择为1，就是指定要删除的对象
+                url:'http://localhost:3000/posts/1'
+            }).then(response=>{
+                console.log(response);
+            }).catch(reject=>{
+                console.log(reject);
+            });
+        }
+    </script>
+</body>
+</html>

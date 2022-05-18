@@ -25,18 +25,58 @@
     <div class="box">
         <form action="">
             <p>
-                <label for="username">账号：</label>
-                <input type="number" id="username" placeholder="请输入你的账号">
+                <label for="username">手机号码：</label>
+                <input type="number" id="username" placeholder="请输入你的手机号码">
             </p>
             <p>
-                <label for="password">密码：</label>
+                <label for="password">密 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 码：</label>
                 <input type="password" placeholder="请输入你的密码" id="password">
             </p>
             <p>
                 <label for="indentity">身份证号：</label>
                 <input type="number" placeholder="请输入你的身份证号码" id="indentity">
             </p>
+            <button onclick="alert('该功能尚未开发！')">注册</button>
+            <button onclick="sign()">登录</button>
         </form>
     </div>
+    <script>
+        var ipts = document.querySelectorAll("input");
+        function sign(){
+            var num = /^[1-9]\d{10}$/;
+            // 手机号码的范围是11位数字，每一位数字的取值位0-9，且首位不能为0
+            if(ipts[0].value == ''){
+                alert("请输入你的电话号码");
+                console.log(ipts[0].value);
+                return
+            }else if (!num.test(ipts[0].value) ) {
+                alert("请输入正常格式的电话号码");
+                return
+            }else{
+                alert("登录成功！");
+                return
+            }
+
+            var a = ipts[0].value;
+            console.log(ipts[0].value);
+        };
+        
+          // 正则表达式，敏感词过滤
+        // function f(){
+        //     /* 
+        //         64行代码调用该函数会传入一个对象，对象有三个值，第三个为 time 变量的值，
+        //         第二个值为第一个值在第三个值中的的索引，
+        //         第一个值为正则表达式所选出的值之一。
+        //     */
+        //     return "&#" + arguments[0].charCodeAt(0) + ";";
+        //     // console.log(arguments);
+        // }
+
+        // var time = '<meta charset="utf-8">';
+        // var a = /\'|\"|\<|\>/gi;
+        // var b = time.replace(a,f);
+        // console.log(time);
+        // console.log(b);
+    </script>
 </body>
 </html>

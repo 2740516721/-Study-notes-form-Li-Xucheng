@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        //拦截器分为两种  1、请求拦截器  2、响应拦截器
+        //Interceptors  [ˌɪntəˈsɛptəz] 拦截器
+        //设置请求拦截器  config配置对象是可以修改参数的，同样的响应请求也是可以修改参数的
+        axios.interceptors.request.use(function(config){
+            //例如：
+            config.params = {id:1};
+            console.log('请求拦截器  成功');
+            return config;
+        },function(error){
+            console.log('请求拦截器 失败');
+            return Promise.reject(error);
+        });
+
+
+        //响应拦截器   修改response参数
+        axios.interceptors.response.use(function(response){
+            console.log('响应拦截器  成功');
+            //例如只返回自定义的响应数据,那么下面自定义回调axios返回的response=response.data
+            // return response;
+            return response.data;
+        },function(error){
+            console.log('响应拦截器  失败');
+            return Promise.reject(error);
+        })
+        axios({
+            method:'GET',
+            url: 'http://localhost:3000/posts'
+        }).then(response=>{
+            console.log(response)
+        })
+
+        //修改请求拦截器或者响应拦截器的配置对象参数，相当于改变了请求数据的要求，
+        //他会影响你第一设置的请求数据（请求拦截器）或者接收回来的数据（响应的数据）。
+        //拦截器相当于一个海关或者有人把守的门口 其中有两道程序，分别为正确和错误两道不同的流程
+    </script>
+</body>
+</html>
