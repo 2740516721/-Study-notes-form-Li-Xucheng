@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            opacity: 0.5;
+        }
+        .box::after{
+            content: "hello world";
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <script>
+        // getComputeStyle方法
+        let box = document.querySelector(".box");
+        // 该方法只能获取style属性值，不能修改属性值
+        var w = window.getComputedStyle(box,"::after");
+        console.log(w.content);
+
+
+        //currentStyle方法，该方法只能IE浏览器使用有效。
+        var w1 = box.currentStyle;
+        console.log(w1);
+    </script>
+</body>
+</html>
