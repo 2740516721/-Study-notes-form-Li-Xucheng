@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "二月八号学习axios第一课，二月十号通过PUT请求修改了数据",
+      "author": "利煦承",
+      "id": 2
+    },
+    {
+      "title": "今天是二月十号，我学习了POST请求",
+      "author": "利煦承",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "body": "二月十号晚上，以其他方式使用POST请求",
+      "postId": 2,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "id": 1,
+      "username": "zhangsan",
+      "password": "123456"
+    }
+  ]
+}

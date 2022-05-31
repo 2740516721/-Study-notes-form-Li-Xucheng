@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=btn()>点击发送</button>
+    <script>
+            let isSending = false;//是否正在发送ajax请求
+
+        function btn(){
+            if(isSending){
+                xhr.abort();
+            }//如果正在发送请求，则停止当前按下的请求
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET','http://localhost:8000/reset');
+            xhr.send();
+            isSending = true;//修改标识符变量的值
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                    isSending = false;//响应成功，发送停止
+                    console.log(xhr.response);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

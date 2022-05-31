@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>基本使用</h1><hr>
+        <button style="background-color: rgb(77, 77, 247);">发送get请求</button>
+        <button style="background-color: rgb(247, 179, 77);">发送post请求</button>
+        <button style="background-color: rgb(94, 241, 107);">发送put请求</button>
+        <button style="background-color: rgb(218, 76, 76);">发送delete请求</button>
+    </div>
+    <script>
+       var btns = document.querySelectorAll('button');
+       //默认配置
+       axios.defaults.baseURL = 'http://localhost:3000';
+       axios.defaults.method = 'GET';//设置axios的默认请求为 GET
+    //    axios.defaults.params = {id:100};
+    //    axios.defaults.timeout = 3000;
+       btns[0].onclick = function(){
+           axios({
+                url:'/posts'
+           }).then(response=>{
+               console.log(response);
+           })
+       }
+    </script>
+</body>
+</html>

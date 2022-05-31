@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+    <div class="box">
+        <hello-world v-bind:title="title" v-bind:name="name"></hello-world>
+    </div>
+    <script>
+        //全局注册组件
+       /*  Vue.component('hello-world',{
+            //传入静态值
+            props:['text'],
+            template:'<h2 >{{text}}</h2>'
+        }) */
+
+        //局部注册组件
+        var helloWorld = {
+            //传递动态值，且可以给变量类型，进行prop验证
+            props:{
+                title:String,
+                name:Number
+            },
+            template:'<h2>{{title}}{{name}}</h2>'
+        }
+        new Vue({
+            el:'.box',
+            data:function(){
+                return{
+                    title:'hello world',
+                    //会判断name的属性值，如果不为数值，则会被警告，这个被称为prop验证
+                    name:99
+                }
+            },
+            components:{
+                'hello-world':helloWorld
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios其他使用</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>基本使用</h1><hr>
+        <button style="background-color: rgb(77, 77, 247);">发送get请求</button>
+        <button style="background-color: rgb(247, 179, 77);">发送post请求</button>
+        <button style="background-color: rgb(94, 241, 107);">发送put请求</button>
+        <button style="background-color: rgb(218, 76, 76);">发送delete请求</button>
+    </div>
+    <script>
+          const btns=document.querySelectorAll('button');
+          //GET请求
+          btns[0].onclick = function(){
+              axios.request({
+                  method: 'GET',
+                  url:'http://localhost:3000/comments'
+              }).then(response=>{
+                  console.log(response);
+              })
+          }
+
+          //POST请求,axios.post(url[, data[, config]])
+          btns[1].onclick = function(){
+            axios.post('http://localhost:3000/comments',
+                        { 
+                            "body": "二月十号晚上，以其他方式使用POST请求",
+                            "postId": 2}).then(response=>{
+                                console.log(response);
+                            })
+          }
+    </script>
+</body>
+</html>

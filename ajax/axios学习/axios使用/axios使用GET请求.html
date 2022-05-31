@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios基本使用之GET请求</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>登录</h1>
+            <label for="">用户名：</label>
+            <input type="text" placeholder="请输入你的账号..." class="userName"><br>
+            <label for="">密码：</label>
+            <input type="number" placeholder="请输入你的密码..." class="password"><br>
+            <button style="background-color: rgb(218, 76, 76);" id="btn">注册</button>
+        </form>
+    </div>
+    <script>
+        const inputs=document.querySelectorAll('input');
+        var btn= document.getElementById('btn');
+        btn.onclick=function(){
+            var userName=inputs[0].value;
+            var password=inputs[1].value;
+            axios({
+                method:'GET',
+                url:'http://localhost:3000/user',
+            }).then(response=>{
+               if(response.data.username==userName && response.data.password==password){
+                   alert('登录成功！')
+               }else{
+                   alert('账号或密码不正确！')
+               };
+            }).catch(reject=>{
+                console.log(reject);
+            })
+        }
+        </script>
+</body>
+</html>
